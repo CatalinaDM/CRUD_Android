@@ -68,6 +68,8 @@ Clase principal de la aplicación que maneja la interfaz de usuario y las intera
 4. Libro define la estructura de los datos almacenados.
 
 ---
+###Video demostrativo
+ **Video demostrativo**: [Enlace al video demostrativo](https://drive.google.com/file/d/1FTg16rx7Tvdgq9VW35vj2H1oO_SWhsSK/view?usp=sharing)
 
 ## *4. Conclusión*
 Este proyecto proporciona una gestión eficiente de libros mediante SQLite, ofreciendo una interfaz amigable y funcionalidades completas para agregar, modificar y eliminar registros.
