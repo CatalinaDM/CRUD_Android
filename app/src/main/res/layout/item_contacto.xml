@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    android:background="#FBFFE4">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#af9eb4"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgLibro"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Imagen de libro"
+            android:scaleType="centerCrop"
+            android:src="@drawable/books"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Nombre del Libro"
+            android:textColor="#1c1c1c"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgLibro"
+            app:layout_constraintEnd_toStartOf="@id/btnEditar" />
+
+        <TextView
+            android:id="@+id/tvGenero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Género"
+            android:textColor="#4b4949"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tvNombre"
+            app:layout_constraintStart_toStartOf="@id/tvNombre"
+            app:layout_constraintEnd_toEndOf="@id/tvNombre" />
+
+        <TextView
+            android:id="@+id/tvAutor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Autor"
+            android:textColor="#4b4949"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tvGenero"
+            app:layout_constraintStart_toStartOf="@id/tvNombre"
+            app:layout_constraintEnd_toEndOf="@id/tvNombre" />
+
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Año de publicación"
+            android:textColor="#4b4949"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tvAutor"
+            app:layout_constraintStart_toStartOf="@id/tvNombre"
+            app:layout_constraintEnd_toEndOf="@id/tvNombre" />
+
+        <TextView
+            android:id="@+id/tvEstatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Estado actual"
+            android:textColor="#4b4949"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tvYear"
+            app:layout_constraintStart_toStartOf="@id/tvNombre"
+            app:layout_constraintEnd_toEndOf="@id/tvNombre" />
+
+        <ImageButton
+            android:id="@+id/btnEditar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Editar libro"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ediar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnEliminar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnEliminar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Eliminar libro"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/borrar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
